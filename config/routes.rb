@@ -1,4 +1,13 @@
 AppTemplate::Application.routes.draw do
+  
+  root to: 'static_pages#home'
+
+  match '/video',     to: 'static_pages#video'
+  match '/contacts',  to: 'static_pages#contacts'
+  match '/home', to: 'static_pages#home'
+  
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
